@@ -1,0 +1,18 @@
+#JSGF V1.0;
+
+
+grammar words;
+
+public <name>= (Charles|Charlie);
+public <maria>= (I Solemnly Swear I'm Up To No Good);
+public <rachel>= (Its me);
+public <lock>= (Lock | Unlock) [The] (Commands);
+public <greet>= (Hello) (<name>);
+public <feeling> = (How) (Are) (You);
+public <smallTalk>=(What's) (Up);
+public <process> =  (Open | Close) (Pandora);
+public <compTerm> = (Abort)* (Shut Down);
+public <pandoraOptions> = (Like|Dislike|Next|Pause|Play) [This] (Song);
+public <closeMe> = (close);
+public <time>= (get) [the] (time);
+public <commands>= (<name>) (<process>|<compTerm>|<pandoraOptions>|<closeMe>|<time>|<smallTalk>|<feeling>|<maria>)|<lock>;
